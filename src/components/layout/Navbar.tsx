@@ -23,9 +23,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center cursor-pointer">
-            <span className="text-xl md:text-2xl font-light tracking-widest text-gold-300 uppercase">
-              Roxana Grimaldo
-            </span>
+            <img 
+              src="/logo-roxana-navbar-rosado.png" 
+              alt="Roxana Grimaldo Logo" 
+              className="h-12 md:h-16 w-auto object-contain"
+            />
           </div>
           
           {/* Desktop Nav */}

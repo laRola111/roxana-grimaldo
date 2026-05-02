@@ -13,9 +13,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <span className="text-2xl font-light tracking-widest text-gold-300 uppercase mb-4">
-              Roxana Grimaldo
-            </span>
+            <img 
+              src="/logo-roxana-navbar-rosado.png" 
+              alt="Roxana Grimaldo Logo" 
+              className="h-14 w-auto object-contain mb-4"
+            />
             <p className="text-gray-400 text-sm max-w-xs">
               {t.hero.subtitle}
             </p>

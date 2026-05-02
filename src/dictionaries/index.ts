@@ -5,6 +5,7 @@ export const dictionaries = {
       about: "About Me",
       testimonials: "Testimonials",
       contact: "Book Now",
+      faq: "FAQ",
     },
     hero: {
       title: "Reveal Your True Radiance",
@@ -15,27 +16,52 @@ export const dictionaries = {
     services: {
       title: "Premium Treatments",
       subtitle: "Elevate your beauty routine with our signature services",
+      categories: {
+        all: "All",
+        facials: "Facials",
+        body: "Body",
+        laser: "Laser",
+      },
       items: [
         {
-          id: "facial",
+          id: "facial-1",
           title: "Signature Glow Facial",
-          description: "A customized facial treatment designed to deeply cleanse, exfoliate, and hydrate your skin.",
+          description: "A customized facial treatment designed to deeply cleanse, exfoliate, and hydrate your skin for an instant, lasting glow.",
           price: "From $120",
           duration: "60 min",
+          category: "facials",
+          badge: "Best Seller",
+          featured: true,
         },
         {
-          id: "sculpting",
-          title: "Body Sculpting",
-          description: "Non-invasive body contouring to help you achieve your desired silhouette.",
+          id: "body-1",
+          title: "Advanced Body Sculpting",
+          description: "Non-invasive body contouring utilizing state-of-the-art tech to help you achieve your desired silhouette.",
           price: "From $200",
           duration: "90 min",
+          category: "body",
+          badge: "Premium",
+          featured: true,
         },
         {
-          id: "laser",
+          id: "laser-1",
           title: "Laser Hair Removal",
-          description: "Safe and effective laser hair reduction for smooth, flawless skin.",
+          description: "Safe and effective laser hair reduction for smooth, flawless skin in all required areas.",
           price: "From $85",
           duration: "Varies",
+          category: "laser",
+          badge: "New",
+          featured: false,
+        },
+        {
+          id: "facial-2",
+          title: "Anti-Aging Collagen Boost",
+          description: "Plump fine lines and restore youthful elasticity using advanced peptide infusion.",
+          price: "From $150",
+          duration: "75 min",
+          category: "facials",
+          badge: "Signature",
+          featured: false,
         },
       ],
     },
@@ -48,6 +74,24 @@ export const dictionaries = {
         { label: "Years Experience", value: "8+" },
         { label: "Certifications", value: "15+" },
       ],
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "Everything you need to know about your luxury experience",
+      items: [
+        {
+          q: "What should I do before my first treatment?",
+          a: "Arrive well hydrated, avoid heavy sun exposure for 48 hours, and bring a list of your current skincare products."
+        },
+        {
+          q: "Are the treatments painful?",
+          a: "Most treatments are completely relaxing. Laser treatments may cause mild discomfort, compared to a rubber band snap."
+        },
+        {
+          q: "How many sessions will I need?",
+          a: "This varies by treatment. Facials provide instant results, while laser hair removal typically requires 6-8 sessions."
+        }
+      ]
     },
     contact: {
       title: "Book Your Experience",
@@ -76,6 +120,7 @@ export const dictionaries = {
       about: "Sobre Mí",
       testimonials: "Testimonios",
       contact: "Reservar",
+      faq: "Dudas",
     },
     hero: {
       title: "Revela tu Verdadera Radiancia",
@@ -86,27 +131,52 @@ export const dictionaries = {
     services: {
       title: "Tratamientos Premium",
       subtitle: "Eleva tu rutina de belleza con nuestros servicios exclusivos",
+      categories: {
+        all: "Todos",
+        facials: "Faciales",
+        body: "Corporal",
+        laser: "Láser",
+      },
       items: [
         {
-          id: "facial",
+          id: "facial-1",
           title: "Facial Resplandor",
-          description: "Un tratamiento facial personalizado diseñado para limpiar profundamente, exfoliar e hidratar tu piel.",
+          description: "Un tratamiento facial personalizado diseñado para limpiar profundamente, exfoliar e hidratar tu piel logrando un brillo instantáneo.",
           price: "Desde $120",
           duration: "60 min",
+          category: "facials",
+          badge: "Más Popular",
+          featured: true,
         },
         {
-          id: "sculpting",
+          id: "body-1",
           title: "Escultura Corporal",
-          description: "Contorno corporal no invasivo para ayudarte a lograr la silueta deseada.",
+          description: "Contorno corporal no invasivo con tecnología de punta para ayudarte a lograr la silueta deseada.",
           price: "Desde $200",
           duration: "90 min",
+          category: "body",
+          badge: "Premium",
+          featured: true,
         },
         {
-          id: "laser",
+          id: "laser-1",
           title: "Depilación Láser",
-          description: "Reducción de vello segura y efectiva para una piel suave e impecable.",
+          description: "Reducción de vello segura y efectiva para una piel suave e impecable en todas las áreas requeridas.",
           price: "Desde $85",
           duration: "Varía",
+          category: "laser",
+          badge: "Nuevo",
+          featured: false,
+        },
+        {
+          id: "facial-2",
+          title: "Impulso de Colágeno Anti-Edad",
+          description: "Rellena líneas finas y restaura la elasticidad juvenil usando infusión avanzada de péptidos.",
+          price: "Desde $150",
+          duration: "75 min",
+          category: "facials",
+          badge: "Exclusivo",
+          featured: false,
         },
       ],
     },
@@ -119,6 +189,24 @@ export const dictionaries = {
         { label: "Años de Experiencia", value: "8+" },
         { label: "Certificaciones", value: "15+" },
       ],
+    },
+    faq: {
+      title: "Preguntas Frecuentes",
+      subtitle: "Todo lo que necesitas saber sobre tu experiencia de lujo",
+      items: [
+        {
+          q: "¿Qué debo hacer antes de mi primer tratamiento?",
+          a: "Llega bien hidratada, evita la exposición solar intensa 48h antes y trae una lista de tus productos actuales."
+        },
+        {
+          q: "¿Son dolorosos los tratamientos?",
+          a: "La mayoría son totalmente relajantes. El láser puede dar una molestia similar a un pequeño pellizco."
+        },
+        {
+          q: "¿Cuántas sesiones necesitaré?",
+          a: "Varía según el tratamiento. Los faciales dan resultados instantáneos, el láser requiere de 6 a 8 sesiones."
+        }
+      ]
     },
     contact: {
       title: "Reserva tu Experiencia",
