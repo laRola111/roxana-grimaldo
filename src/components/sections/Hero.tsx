@@ -27,7 +27,7 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="flex justify-center mb-8"
         >
-           <div className="w-24 h-1 bg-gold-500 rounded-full"></div>
+          <img src="/Rocana Grimaldo LOGO-03.png" alt="Roxana Grimaldo Logo" className="h-40 md:h-56 w-auto object-contain drop-shadow-2xl" />
         </motion.div>
 
         <motion.h1 
@@ -37,7 +37,7 @@ export function Hero() {
           className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-white mb-6 uppercase"
         >
           {t.hero.title.split(' ').map((word, i) => (
-            <span key={i} className={i % 2 !== 0 ? 'text-gold-300 italic' : ''}>
+            <span key={i} className={i % 2 !== 0 ? 'text-primary-300 italic' : ''}>
               {word}{' '}
             </span>
           ))}
@@ -60,7 +60,7 @@ export function Hero() {
         >
           <a
             href="#contact"
-            className="px-8 py-4 bg-gold-500 text-black rounded-sm text-sm font-medium uppercase tracking-[0.2em] hover:bg-gold-400 transition-all w-full sm:w-auto shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)]"
+            className="px-8 py-4 bg-primary-500 text-white rounded-sm text-sm font-medium uppercase tracking-[0.2em] hover:bg-primary-400 transition-all w-full sm:w-auto shadow-[0_0_20px_rgba(219,39,119,0.3)] hover:shadow-[0_0_30px_rgba(219,39,119,0.5)]"
           >
             {t.hero.cta}
           </a>
@@ -81,7 +81,7 @@ export function Hero() {
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center"
       >
         <span className="text-xs uppercase tracking-widest text-gray-400 mb-2">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-gold-500 to-transparent"></div>
+        <div className="w-[1px] h-12 bg-gradient-to-b from-primary-500 to-transparent"></div>
       </motion.div>
     </section>
   );

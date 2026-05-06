@@ -21,13 +21,13 @@ export function About() {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-sm relative z-10">
               <img 
-                src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1974&auto=format&fit=crop" 
+                src="/mockups/profile.png" 
                 alt="Roxana Grimaldo" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -bottom-6 -right-6 w-full h-full border border-gold-500/30 z-0 rounded-sm"></div>
+            <div className="absolute -bottom-6 -right-6 w-full h-full border border-primary-500/30 z-0 rounded-sm"></div>
           </motion.div>
 
           {/* Text Side */}
@@ -40,7 +40,7 @@ export function About() {
             <h2 className="text-4xl md:text-5xl font-light tracking-widest text-white uppercase mb-4">
               {t.about.title}
             </h2>
-            <h3 className="text-xl text-gold-400 mb-8 font-light italic">
+            <h3 className="text-xl text-primary-400 mb-8 font-light italic">
               {t.about.subtitle}
             </h3>
             
@@ -51,7 +51,7 @@ export function About() {
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
               {t.about.stats.map((stat, index) => (
                 <div key={index} className="text-center md:text-left">
-                  <div className="text-3xl md:text-4xl font-light text-gold-300 mb-2">{stat.value}</div>
+                  <div className="text-3xl md:text-4xl font-light text-primary-300 mb-2">{stat.value}</div>
                   <div className="text-xs uppercase tracking-widest text-gray-500">{stat.label}</div>
                 </div>
               ))}

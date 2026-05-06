@@ -36,7 +36,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm uppercase tracking-wider text-gray-300 hover:text-gold-400 transition-colors"
+                className="text-sm uppercase tracking-wider text-gray-300 hover:text-primary-400 transition-colors"
               >
                 {link.name}
               </a>
@@ -44,7 +44,7 @@ export function Navbar() {
             
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 text-sm text-gray-300 hover:text-gold-400 transition-colors"
+              className="flex items-center space-x-2 text-sm text-gray-300 hover:text-primary-400 transition-colors"
             >
               <Globe className="w-4 h-4" />
               <span className="uppercase">{language}</span>
@@ -52,7 +52,7 @@ export function Navbar() {
             
             <a
               href="#contact"
-              className="bg-gold-500 hover:bg-gold-400 text-black px-6 py-2 rounded-sm text-sm font-medium transition-colors uppercase tracking-wider"
+              className="bg-primary-500 hover:bg-primary-400 text-white px-6 py-2 rounded-sm text-sm font-medium transition-colors uppercase tracking-wider shadow-md shadow-primary-500/20"
             >
               {t.nav.contact}
             </a>
@@ -86,7 +86,7 @@ export function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-4 text-base font-medium text-gray-300 hover:text-gold-400 text-center border-b border-white/5 uppercase tracking-wider"
+                className="block px-3 py-4 text-base font-medium text-gray-300 hover:text-primary-400 text-center border-b border-white/5 uppercase tracking-wider"
               >
                 {link.name}
               </a>
@@ -95,7 +95,7 @@ export function Navbar() {
                <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center bg-gold-500 text-black px-6 py-3 rounded-sm text-sm font-medium uppercase tracking-wider"
+                className="w-full text-center bg-primary-500 hover:bg-primary-400 text-white px-6 py-3 rounded-sm text-sm font-medium uppercase tracking-wider shadow-md shadow-primary-500/20 transition-colors"
               >
                 {t.nav.contact}
               </a>

@@ -48,7 +48,7 @@ export function Faq() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="glass rounded-sm border border-white/5 hover:border-gold-500/20 transition-all duration-300"
+                className="glass rounded-sm border border-white/5 hover:border-primary-500/20 transition-all duration-300"
               >
                 <button
                   onClick={() => toggleIndex(index)}
@@ -58,9 +58,9 @@ export function Faq() {
                     {item.q}
                   </span>
                   {isOpen ? (
-                    <ChevronUp className="w-5 h-5 text-gold-400 flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-primary-400 flex-shrink-0" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-gold-400 flex-shrink-0" />
+                    <ChevronDown className="w-5 h-5 text-primary-400 flex-shrink-0" />
                   )}
                 </button>
                 

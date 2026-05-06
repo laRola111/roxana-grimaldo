@@ -43,7 +43,7 @@ export function Testimonials() {
 
   return (
     <section id="testimonials" className="py-24 bg-black relative">
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary-500/20 to-transparent"></div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -78,7 +78,7 @@ export function Testimonials() {
             >
               <div className="flex space-x-1 mb-6">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-gold-500 text-gold-500" />
+                  <Star key={i} className="w-4 h-4 fill-primary-500 text-primary-500" />
                 ))}
               </div>
               <p className="text-gray-200 text-lg italic leading-relaxed mb-8">
@@ -88,7 +88,7 @@ export function Testimonials() {
                 <h4 className="text-white font-medium tracking-wide uppercase text-sm">
                   {review.name}
                 </h4>
-                <p className="text-gold-400 text-xs uppercase tracking-widest mt-1">
+                <p className="text-primary-400 text-xs uppercase tracking-widest mt-1">
                   {review.service}
                 </p>
               </div>

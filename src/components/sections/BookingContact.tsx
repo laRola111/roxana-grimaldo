@@ -76,7 +76,7 @@ export function BookingContact() {
         >
           {status === 'success' ? (
             <div className="text-center py-16">
-              <div className="w-20 h-20 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-6 text-gold-400">
+              <div className="w-20 h-20 bg-primary-500/20 rounded-full flex items-center justify-center mx-auto mb-6 text-primary-400">
                 <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
@@ -92,7 +92,7 @@ export function BookingContact() {
                     required 
                     name="name" 
                     type="text" 
-                    className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors"
                   />
                 </div>
                 <div>
@@ -101,7 +101,7 @@ export function BookingContact() {
                     required 
                     name="email" 
                     type="email" 
-                    className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors"
                   />
                 </div>
               </div>
@@ -113,7 +113,7 @@ export function BookingContact() {
                     required 
                     name="phone" 
                     type="tel" 
-                    className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors"
                   />
                 </div>
                 <div>
@@ -122,7 +122,7 @@ export function BookingContact() {
                     required 
                     name="service" 
                     defaultValue=""
-                    className="w-full bg-transparent border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors appearance-none"
+                    className="w-full bg-transparent border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors appearance-none"
                     style={{ backgroundColor: '#0a0a0a' }}
                   >
                     <option value="" disabled>-- {t.contact.form.service} --</option>
@@ -138,7 +138,7 @@ export function BookingContact() {
                 <textarea 
                   name="message" 
                   rows={4} 
-                  className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors resize-none"
+                  className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors resize-none"
                 ></textarea>
               </div>
 
@@ -150,7 +150,7 @@ export function BookingContact() {
                 <button 
                   type="submit" 
                   disabled={status === 'submitting'}
-                  className="flex-1 bg-gold-500 text-black py-4 rounded-sm font-medium uppercase tracking-widest hover:bg-gold-400 transition-colors disabled:opacity-70"
+                  className="flex-1 bg-primary-500 text-black py-4 rounded-sm font-medium uppercase tracking-widest hover:bg-primary-400 transition-colors disabled:opacity-70"
                 >
                   {status === 'submitting' ? t.contact.form.submitting : t.contact.form.submit}
                 </button>

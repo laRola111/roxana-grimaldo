@@ -29,9 +29,9 @@ export function Footer() {
               {t.nav.services}
             </h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="#services" className="hover:text-gold-400 transition-colors">Tratamientos Faciales</a></li>
-              <li><a href="#services" className="hover:text-gold-400 transition-colors">Body Sculpting</a></li>
-              <li><a href="#services" className="hover:text-gold-400 transition-colors">Laser Therapy</a></li>
+              <li><a href="#services" className="hover:text-primary-400 transition-colors">{t.nav.services === "Servicios" ? "Extensiones de pestañas" : "Eyelash Extensions"}</a></li>
+              <li><a href="#services" className="hover:text-primary-400 transition-colors">{t.nav.services === "Servicios" ? "Diseño de cejas" : "Eyebrow Design"}</a></li>
+              <li><a href="#services" className="hover:text-primary-400 transition-colors">{t.nav.services === "Servicios" ? "Limpiezas faciales" : "Facials"}</a></li>
             </ul>
           </div>
 
@@ -41,16 +41,16 @@ export function Footer() {
               Contacto
             </h4>
             <div className="flex items-center space-x-3 text-gray-400 text-sm mb-4">
-              <MapPin className="w-4 h-4 text-gold-500" />
+              <MapPin className="w-4 h-4 text-primary-500" />
               <span>{t.footer.address}</span>
             </div>
              <div className="flex items-center space-x-3 text-gray-400 text-sm mb-4">
-              <Mail className="w-4 h-4 text-gold-500" />
-              <span>contacto@roxanagrimaldo.com</span>
+              <Mail className="w-4 h-4 text-primary-500" />
+              <span>Grimaldoroxana91@gmail.com</span>
             </div>
              <div className="flex items-center space-x-3 text-gray-400 text-sm mb-6">
-              <Phone className="w-4 h-4 text-gold-500" />
-              <span>+1 (123) 456-7890</span>
+              <Phone className="w-4 h-4 text-primary-500" />
+              <span>(512) 316-5784</span>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <p>&copy; {currentYear} Roxana Grimaldo. {t.footer.rights}</p>
           <p className="mt-2 md:mt-0">
-            Diseñado por <a href="https://ruedalarolamedia.com/" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:underline transition-colors">Rueda La Rola Media</a>
+            Diseñado por <a href="https://ruedalarolamedia.com/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:underline transition-colors">Rueda La Rola Media</a>
           </p>
         </div>
       </div>
