@@ -14,12 +14,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Faltan campos obligatorios' }, { status: 400 });
     }
 
-    console.log(`Enviando correo de cita de ${name} a ivangdeveloer@gmail.com...`);
+    console.log(`Enviando correo de cita de ${name} a ivangdeveloper@gmail.com...`);
 
     // Enviar notificación a la dueña/administrador usando el dominio verificado
     const { data: adminEmailData, error: adminError } = await resend.emails.send({
       from: 'Citas Roxana Grimaldo <citas@roxanagrimaldo.com>',
-      to: ['ivangdeveloer@gmail.com'],
+      to: ['ivangdeveloper@gmail.com'],
       subject: `Nueva solicitud de cita - ${service}`,
       html: `
         <h1>Nueva solicitud de cita</h1>
