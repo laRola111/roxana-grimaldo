@@ -39,7 +39,7 @@ export function BookingContact() {
     }
   };
 
-  const WHATSAPP_NUMBER = "1234567890"; // Placeholder
+  const WHATSAPP_NUMBER = "15123165784"; // Actual phone number
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola Roxana, me gustaría agendar una cita.")}`;
 
   return (

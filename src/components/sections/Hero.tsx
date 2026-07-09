@@ -27,7 +27,7 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="flex justify-center mb-8"
         >
-          <img src="/Rocana Grimaldo LOGO-03.png" alt="Roxana Grimaldo Logo" className="h-40 md:h-56 w-auto object-contain drop-shadow-2xl" />
+          <img src="/roxana-logo-hero.png" alt="Roxana Grimaldo Logo" className="h-40 md:h-56 w-auto object-contain drop-shadow-2xl" />
         </motion.div>
 
         <motion.h1 
