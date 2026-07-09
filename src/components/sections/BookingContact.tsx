@@ -146,23 +146,14 @@ export function BookingContact() {
                 <p className="text-red-400 text-sm">{t.contact.form.error}</p>
               )}
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="pt-4">
                 <button 
                   type="submit" 
                   disabled={status === 'submitting'}
-                  className="flex-1 bg-primary-500 text-black py-4 rounded-sm font-medium uppercase tracking-widest hover:bg-primary-400 transition-colors disabled:opacity-70"
+                  className="w-full bg-primary-500 text-black py-4 rounded-sm font-medium uppercase tracking-widest hover:bg-primary-400 transition-colors disabled:opacity-70"
                 >
                   {status === 'submitting' ? t.contact.form.submitting : t.contact.form.submit}
                 </button>
-                <a 
-                  href={whatsappUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex-1 bg-white/5 border border-white/10 text-white py-4 rounded-sm font-medium uppercase tracking-widest hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  {t.contact.whatsapp}
-                </a>
               </div>
             </form>
           )}
